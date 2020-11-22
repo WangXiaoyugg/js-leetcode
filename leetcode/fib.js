@@ -39,3 +39,19 @@ const fib1 = (n) =>  {
 console.log(fib1(2))
 console.log(fib1(3))
 console.log(fib1(4))
+
+// 缓存
+const fib2 = (n) =>  {
+  let cache = []
+  for (let i = 0;  i <= n; i++) {
+    if (i === 0 || i === 1) {
+      cache[i] = i;
+    } else {
+      cache[i] = cache[i-1] + cache[i -2]
+    }
+  }
+  return cache[n]
+}
+console.log(fib2(2))
+console.log(fib2(3))
+console.log(fib2(4))
