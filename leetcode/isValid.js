@@ -31,3 +31,20 @@ const isValid = (s) => {
   return stack.length === 0;  
 
 }
+
+// 使用对象存储
+const isValid1 = (s) =>  {
+  let stack = []
+  let obj = {'(':')', '{':'}', '[': ']'}
+  for (let i= 0; i < s.length; i++) {
+    const el = s[i]
+    if (el in obj) {
+      stack.push(el)
+    } else {
+      if (el !== obj[stack.pop()]) {
+        return false;
+      }
+    }
+  }
+  return !stack.length;
+}
