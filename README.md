@@ -5,3 +5,4 @@ solve leetcode question by javascript
 1. two-sum Finish
 2. fib Finish
 3. isValid Finish
+4. simplifyPath Finish

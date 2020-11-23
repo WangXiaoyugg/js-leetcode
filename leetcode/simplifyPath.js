@@ -27,7 +27,6 @@ var simplifyPath = function(path) {
   let stack = []
   let pathArray = path.split('/').filter(item => item !== '');
   
-  
   for (let i = 0; i <pathArray.length; i++) {
     let item = pathArray[i]
     if (item === '.') {
@@ -36,6 +35,22 @@ var simplifyPath = function(path) {
       stack.pop()
     } else {
       stack.push(item)
+    }
+  }
+
+  return '/' + stack.join('/');
+}
+
+var simplifyPath1 = function(path) {
+  let stack = []
+  let paths= path.split('/');
+  
+  for (let i = 0; i <paths.length; i++) {
+    let p = pathArray[i]
+    if (p === '..') {
+      stack.pop()
+    } else if (p && p !== '.') {
+      stack.push(p)
     }
   }
 
