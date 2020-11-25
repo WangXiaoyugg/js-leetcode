@@ -7,3 +7,4 @@ solve leetcode question by javascript
 3. isValid Finish
 4. simplifyPath Finish
 5. removeElements Finish
+6. reverseList Finish
