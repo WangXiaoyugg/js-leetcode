@@ -9,3 +9,4 @@ solve leetcode question by javascript
 5. removeElements Finish
 6. reverseList Finish
 7. hasCycle Finish
+8. detectCycle Finish
