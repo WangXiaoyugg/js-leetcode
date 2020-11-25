@@ -8,3 +8,4 @@ solve leetcode question by javascript
 4. simplifyPath Finish
 5. removeElements Finish
 6. reverseList Finish
+7. hasCycle Finish
