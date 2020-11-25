@@ -6,3 +6,4 @@ solve leetcode question by javascript
 2. fib Finish
 3. isValid Finish
 4. simplifyPath Finish
+5. removeElements Finish
