@@ -30,6 +30,30 @@ class LinkedList {
     this.length += 1;
   }
 
+  removeAt(index) {
+    // 上一个节点指向下一个节点，把自己干掉
+    let cur = this.head;
+    let prev;
+    let i = 0;
+    
+    
+    if (index == 0) {
+      // 删除第一项
+      this.head = cur.next;
+    } else {
+      while(i < index) {
+        // 上一个和当前都要保存
+        prev = cur;
+        cur = cur.next;
+        i++;
+      }
+      prev.next = cur.next;
+      cur.next = null; // 释放内存
+    }
+    this.length-=1
+    return cur.el;
+  }
+
   print() {
     let cur = this.head;
     let ret = []
@@ -46,4 +70,6 @@ linkedList.append('孙悟空')
 linkedList.append('猪八戒')
 linkedList.append('沙和尚')
 linkedList.append('唐僧')
+linkedList.print()
+linkedList.removeAt(1)
 linkedList.print()
