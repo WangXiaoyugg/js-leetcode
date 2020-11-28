@@ -10,3 +10,4 @@ solve leetcode question by javascript
 6. reverseList Finish
 7. hasCycle Finish
 8. detectCycle Finish
+9. isSameTree Finish
