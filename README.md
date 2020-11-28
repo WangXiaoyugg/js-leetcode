@@ -12,3 +12,4 @@ solve leetcode question by javascript
 8. detectCycle Finish
 9. isSameTree Finish
 10. invertTree Finish
+11. preorderTraversal Finish
